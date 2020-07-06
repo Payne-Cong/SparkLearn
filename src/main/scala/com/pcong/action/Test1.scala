@@ -34,6 +34,11 @@ object Test1 {
     })
 
     rdd1_2.collect().foreach(e => println(e))
+//    (0,1)
+//    (1,2)
+//    (2,3)
+//    (3,4)
+//    (4,5)
 
 
   }
