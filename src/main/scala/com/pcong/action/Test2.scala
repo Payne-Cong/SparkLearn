@@ -57,6 +57,9 @@ object Test2 {
     )
     println(foldValue) // 55
 
+    // lookup(key) -> Seq(values)
+    println(rdd1.lookup("A").toString()) // (2, 1)
+
 
   }
 
