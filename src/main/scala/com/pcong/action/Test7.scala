@@ -46,7 +46,7 @@ object Test7 {
 		df.groupBy("remote_addr", "time_2","url").agg(count("remote_addr").as("pv")).show()
 
 		// 求 一天每小时  每个接口 访问量
-		df.groupBy("url","time_2").agg(countDistinct("remote_addr").as("pu")).show()
+		df.groupBy("url","time_2").agg(countDistinct("remote_addr").as("pu")).orderBy(desc("pu")).show()
 
 	}
 
